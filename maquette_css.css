@@ -51,16 +51,24 @@ font-weight: normal;
 src: url("police/segoeui.tff") format("tff");
 }
 
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+ src: url('police/Myriad Pro Regular.ttf') format('ttf');
+	}
+
 .bloc_header
 {
-background: url("ble.png") no-repeat;
+background: url("images/ble.png")  no-repeat top center; 
+background-size: 100%;
 height: 600px; 
+width: 100%
 }
 
 .conteneur
 {
 background-color: rgba(67, 78, 85, 0.9);
-justify-content: center;
 display: flex;
 justify-content: space-between;
 padding: 50px 300px;
@@ -75,14 +83,12 @@ padding: 50px 300px;
 .navigation 
 {
 text-align: right;
-
 }
 
 .navigation li 
 {
-
- font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
- display: inline;
+font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
+display: inline;
  font-size: 0.7em;
 font-weight:bold;
 }
@@ -114,17 +120,13 @@ text-align: center;
 margin-top: 170px;
 }
 
-
-
-
 .fond 
 {
-	
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
 }
 
 .bg-grey
@@ -146,15 +148,13 @@ padding: 10px 10px;
 {
 	height: 350px; 
 	background-color:rgb(72, 202, 255);
-   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;  
-  
-
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
 }
 
 .flex1 
 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -163,18 +163,17 @@ h2
 font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
 font-size: 1.5em;
 font-weight: lighter;
-padding:30px 100px; 
-margin-left :240px
- 
+
+padding-top : 50px; 
 }
 
 .element
 {
-   margin-left: 30px;
-	text-align:justify;
-	padding: 20px 20px; 
+   
+text-align:justify;
 
 }
+
 .icone
 {
 margin-left: 5px;
@@ -185,7 +184,6 @@ padding: 20px 0;
 font-size: 20px;
 font-weight: semi-bold; 
 margin-left: 5px;
-
 }
 .description
 {
@@ -193,16 +191,6 @@ padding: 10px 10px;
 font-size: 10px;
 margin-right: 10px;
 width: 150px; 
-}
-
-.flex2
-{
-height: 500px; 
-padding:  30px 20%;
-font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;  
-color: rgb(81,95,103);
-text-align: center;
-margin-left: 15px;
 }
 #pictures
 {
@@ -212,18 +200,22 @@ color: rgb(81,95,103);
 }
 
 
-.nav_liens
-{
-display: flex;
-flex-wrap: nowrap;
-align-items: center;
 
 
-}
-.navig_photos
+
+.en_tete_portfolio
 {
 display: flex;
 justify-content: space-between;
+
+margin-left: 15px;
+margin-bottom: 40px;
+}
+
+.navig_portfolio
+{
+display: flex;
+flex-wrap: nowrap;
 
 }
 .navigation2
@@ -232,7 +224,8 @@ text-align: right;
 font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
 font-size: 0.7em;
 font-weight: bold; 
-margin-left: 320px;
+margin-top: 60px;
+margin-left: 30px;
 
 
 }
@@ -240,24 +233,30 @@ margin-left: 320px;
 .navigation2 li
 {
 display: inline;
-padding: auto 50px;
-
 
 }
+
 .navigation2 li a
 {
-
 text-decoration: none;
 color: rgb(81,95,103);
 margin-right: 30px;
 
-
 }
+
+.navigation2 li a:hover
+{
+color: rgb(75, 202, 255);
+border: 2px solid  rgb(75,202,255); 
+margin-right: 30px;
+}
+
 .photo_min
 {
 height: 210px;
-width: 210px;
-margin: 10px 10px; 
+width: 23%;
+margin-top : 20px;
+margin-left: 15px;
 }
 
 .photo_min:hover
@@ -270,16 +269,213 @@ margin: 10px 10px;
     transition: all 1s ease;
 }
 
-.navigation2 li a:hover
-{
-	color: rgb(75, 202, 255);
-	border: 2px solid  rgb(75,202,255); 
-    padding: 5px 20px;
-}
+
+
 
 #default
 {
+height: 350px;
 background-color: rgb(81,95,103);
-font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-height: 500px;
+font-family:'Segoe UI', Tahoma, Verdana, sans-serif; 
 }
+.video
+{
+float: right;	
+width: 440px;
+height: 230px;
+margin-top: 60px;
+
+}
+.flex3
+{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+
+.element_default
+{
+width: 500px;
+}
+
+.contenu 
+{
+width: 60%;
+margin:auto;
+}
+
+.default_text
+{
+width: 42%;
+}
+
+.default_paragraphe
+{
+font-size: 12px;
+margin-top: 30px;
+}
+
+.link1
+{
+margin-top: 30px;	
+font-size: 12px;
+color: rgb(53,63,70);
+border: 2px solid  rgb(53,63,70);
+font-weight: bold;
+margin-right:30%;
+width: 75px;
+text-align: center;
+padding: 10px 15px;
+}
+
+#tweeter
+{
+background-color:rgb(75,202,255); 
+height: 200px;
+}
+
+.img_twitter
+{
+float: right;
+margin-top: 50px;
+}
+
+.tweeter_text
+{
+	margin-top: 30px;
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
+	font-size: 22px;
+	font-weight: lighter;
+
+}
+
+#j_doe
+{
+	background: url("images/photo_doe.png") no-repeat top center; 
+	background-size: 100%;
+	height: 350px;
+	color: rgb(224, 224, 224)
+}
+
+.flex4
+{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 30px;
+ font-family:'Segoe UI', Tahoma, Verdana, sans-serif; 
+ font-size: 12px;
+
+}
+.element_doe
+{
+width: 47%;
+}
+.doe_paragraphe
+{
+ margin-top: 10px;
+ line-height: 1.6 ;
+}
+
+.reseaux_sociaux
+{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+}
+
+.reseau
+{
+width: 80%;
+}
+#testimonial
+{
+height: 250px;
+color: rgb(81,95,103);
+}
+
+#testimonial
+{
+height: 250px;
+ font-family:'Segoe UI', Tahoma, Verdana, sans-serif; 
+} 
+
+
+.mark
+{
+float: right;
+margin-top: 67px;
+}
+
+.testimonial_ex
+{
+font-size: 24px;
+font-weight: lighter; 
+margin-top: 38px;
+line-height: 1.6 ;
+}
+.w_w
+{
+font-size: 12px;
+font-weight: bolder;
+color: rgb(75, 202, 255);
+margin-top: 10px;
+}
+#contact
+{
+background: url("images/focus.png");
+height:800px;
+
+
+}
+
+
+
+fieldset 
+{	
+		margin-bottom:30px;
+		margin-top: 30px;
+}
+		
+	
+label {
+	margin-top:30px;
+	display:block;
+	font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px; 
+	}
+
+	input[type=text], input[type=email]
+	{
+	border: 2px solid white;	
+	background-color: rgba(240,240,240, 0);	
+	width: 33%;
+	height: 50px;
+	}
+	
+	#comments
+	{
+	width: 100%;	
+	height: 200px;
+	border: 2px solid white;	
+	background-color: rgba(240,240,240, 0);
+	}
+
+	input[type=submit]
+	 {
+		width:30%;
+		height: 75px;
+		box-shadow:1px 1px 1px rgb(75,202,255);
+		border: solid  rgb(75,202,255);
+		background-color:  rgb(75,202,255);
+		font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+		font-weight: bold;
+		color: white;
+
+
+	 }
+	 
+		
